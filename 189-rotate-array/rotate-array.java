@@ -10,7 +10,7 @@ class Solution {
     }
     public void rotate(int[] nums, int k) {
         int n = nums.length;
-        if(k>=n)
+        if(k>n)
             k = k % n;
         else if(k <= 0)
             return;
