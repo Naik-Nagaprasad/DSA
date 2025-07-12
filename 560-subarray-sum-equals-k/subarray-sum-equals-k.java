@@ -1,6 +1,7 @@
 class Solution {
     public int subarraySum(int[] nums, int k) {
         //sliding window won't work if it has -ve numbers
+        //this is the potimal solution when arr has -ve numbers
         HashMap<Integer, Integer> map = new HashMap<>();
         int sum=0, rem=0, res=0;
         for(int i=0; i<nums.length; i++){
