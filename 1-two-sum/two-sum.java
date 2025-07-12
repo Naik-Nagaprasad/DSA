@@ -10,7 +10,8 @@ class Solution {
         //         }
         //     }
         // }
-
+    
+        //optimal when indices have to be returned
         HashMap<Integer, Integer> map = new HashMap<>();
         for(int i=0; i<nums.length; i++){
             int rem = target - nums[i];
@@ -23,7 +24,9 @@ class Solution {
                 map.put(nums[i], i);
             }
         }
-
+        //if ques is to check whether 2 values exist or not then use the anology
+        //sort array -> two pointers while low<high if sum+low>target -> low++ or
+        //high-- 
         return a;
     }
 }
