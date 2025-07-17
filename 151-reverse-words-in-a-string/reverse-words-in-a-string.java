@@ -21,9 +21,6 @@ class Solution {
         }
         reverse(str, j, n-1);
         reverse(str, 0, n-1);
-        for(int i=1; i<n; i++){
-
-        }
         StringBuilder sb = new StringBuilder();
         boolean space = false;
         for (char c : str) {
