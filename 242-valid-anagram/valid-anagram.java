@@ -8,7 +8,7 @@ class Solution {
             arr[t.charAt(i)]--;
         }
         for(int i=0; i<256; i++){
-            if(arr[i]>0)
+            if(arr[i]!=0)
                 return false;
         }
         return true;
